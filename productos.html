@@ -31,13 +31,33 @@
     </header>
 
     <div class="barra__articulos">
-        <div class="barra__articulo"><p>Hombre</p></div>
-        <div class="barra__articulo"><p>Mujer</p></div>
-        <div class="barra__articulo"><p>Niños</p></div>
+        <p>Hombre</p>
+        <p>Mujer</p>
+        <p>Niños</p>
     </div>
     
     <nav class="barra__lateral">
-
+        <select>
+            <option value="Ordenar por...">Ordenar por...</option>
+            <option value="Precio mas bajo">Precio mas bajo</option>
+            <option value="Precio mas alto">Precio mas alto</option>
+        </select>
+        <select>
+            <option selected value="Marca">-- Marca --</option>
+            <option value="Nike">Nike</option>
+            <option value="Adidas">Adidas</option>
+        </select>
+        <select>
+            <option selected value="Color">-- Color --</option>
+            <option value="Negro">Negro</option>
+            <option value="Blanco">Blanco</option>
+            <option value="Azul">Azul</option>
+        </select>
+        <select>
+            <option selected value="Talle">-- Talle --</option>
+        </select>
+            <input type="text" placeholder="Desde">
+            <input type="text" placeholder="Hasta">
     </nav>
   
     <main class="contenido__productos">

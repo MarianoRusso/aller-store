@@ -161,17 +161,20 @@ main {
 }
 
 .producto {
-    padding: 10px;
+
 }
 
-.producto__imagen {
-    width: 280px;
+@media (min-width: 768px) {
+    .producto__imagen {
+    justify-content: center;
 }
+}
+
 
 .producto__informacion {
     text-align: center;
     padding: 20px;
-    text-shadow: 2px 2px 5px var(--primarioClaro)
+    text-shadow: 2px 2px 5px var(--primarioClaro);
 }
 
 .producto__precio {
@@ -333,6 +336,20 @@ legend {
 
 /* Pagina todos los productos */
 
+#body__productos{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 25% 75%;
+    grid-template-areas:
+        "header header"
+        "art art"
+        "nav nav"
+        "main main"
+        "footer footer"
+        "consumidores consumidores";
+}
+
+@media (min-width: 768px) {
 #body__productos {
     display: grid;
     grid-template-rows: auto;
@@ -342,22 +359,33 @@ legend {
         "art art"
         "nav main"
         "nav main"
-        "footer footer";
+        "footer footer"
+        "consumidores consumidores";
+    }
 }
+    
 
-.barra__lateral {
+
+.barra__lateral{
     grid-area: nav;
     background-color: var(--blanco);
     display: grid;
-
+    justify-content: center;
+    gap: 10px;
 }
 
 .contenido__productos {
     grid-area: main;
+    padding: 30px;
+    justify-content: center;
 }
 
-.barra__ariculos {
+.barra__articulos {
     grid-area: art;
-    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
+}
 
+.consumidores{
+    grid-area: consumidores;
 }
