@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <header class="header">
         <nav class="header__nav">
             <a href="index.html">Inicio</a>
@@ -18,48 +19,61 @@
             <a href="#">Iniciar sesion</a>
         </nav>
         <div class="div__header">
-            <a href="index.html"><img class="header__logo" src="./img/logo_aller_alt2.png" alt="logo"></a>
-            <a href="index.html">
-                <h1>Aller store</h1>
-            </a>
+            <div class="div__logo">
+                <a href="index.html"><img class="header__logo" src="./img/logo_aller_alt2.png" alt="logo"></a>
+            </div>
+            <div class="div__titulo">
+                <a href="index.html">
+                    <h1>Aller store</h1>
+                </a>
+            </div>
         </div>
     </header>
+
 
     <main>
         <form class="formulario__cuenta">
             <fieldset>
                 <table class="fomulario__tabla" border="0" cellpadding="10" cellspacing="0">
                     <tr>
-                        <legend>
-                            <h2>Crear cuenta</h2>
-                        </legend>
+                        <legend>Crear cuenta</legend>
                         <td>
-                            <label>Nombre </label>
-                            <input type="text" placeholder="Nombre">
+                            <div class="tr_form">
+                                <label>Nombre </label>
+                                <input type="text" placeholder="Nombre">
+                            </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label> Apellido</label>
-                            <input type="text" placeholder="Apellido">
+                            <div class="tr_form">
+                                <label> Apellido</label>
+                                <input type="text" placeholder="Apellido">
+                            </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label>Fecha de nacimiento</label>
-                            <input type="date" placeholder="">
+                            <div class="tr_form">
+                                <label>Fecha de nacimiento</label>
+                                <input type="date" placeholder="">
+                            </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label>E-Mail </label>
-                            <input type="text" placeholder="E-Mail">
+                            <div class="tr_form">
+                                <label>E-Mail </label>
+                                <input type="text" placeholder="E-Mail">
+                            </div>
                         </td>
                     </tr>
 
                     <td>
-                        <label>Contraseña</label>
-                        <input type="password" placeholder="Contraseña">
+                        <div class="tr_form">
+                            <label>Contraseña</label>
+                            <input type="password" placeholder="Contraseña">
+                        </div>
                     </td>
                     </tr>
                     <tr>
@@ -83,7 +97,11 @@
         <p>Todos los derechos reservados.</p>
 
     </footer>
-
+    <div class="consumidores">
+        <a target="_blank" href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">
+            <p>Defensa de las y los Consumidores: Para reclamos Ingrese aquí</p>
+        </a>
+    </div>
 </body>
 
 </html>

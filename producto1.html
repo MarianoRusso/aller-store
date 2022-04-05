@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    
     <header class="header">
         <nav class="header__nav">
             <a href="index.html">Inicio</a>
@@ -18,10 +19,14 @@
             <a href="#">Iniciar sesion</a>
         </nav>
         <div class="div__header">
+            <div class="div__logo">
             <a href="index.html"><img class="header__logo" src="./img/logo_aller_alt2.png" alt="logo"></a>
-            <a href="index.html">
-                <h1>Aller store</h1>
-            </a>
+            </div>
+            <div class="div__titulo">
+                <a href="index.html">
+                    <h1>Aller store</h1>            
+                </a>
+            </div>
         </div>
     </header>
 
@@ -31,20 +36,20 @@
         <div class="seccion__productos">
             <img class="foto__producto--" src="./img/nike_1.jpg" alt="">
             <div class="descripcion__producto">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae sapiente, ut illo eum
+                <p class="producto__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae sapiente, ut illo eum
                     harum pariatur cupiditate impedit cum deleniti nulla doloribus dolores soluta animi molestias
                     officiis eos eaque quaerat?</p>
 
                 <form class="formulario">
-                    <select class="formulario_producto">
-                        <option selected disabled value="Talle">-- Seleccionar talle --
+                    <select class="formulario__producto">
+                        <option selected disabled value="Talle">-- Talle --
                         </option>
                         <option value="S">S</option>
                         <option value="M">M</option>
                         <option value="L">L</option>
                         <option value="XL">XL</option>
                     </select>
-                    <input class="formulario_producto" type="number" placeholder="Cantidad" min="1" max="10">
+                    <input class="formulario__producto" type="number" placeholder="Cantidad" min="1" max="10">
                     <input class="formulario__boton" type="submit" value="Agregar al carrito">   
                 </form>
             </div>
@@ -61,8 +66,12 @@
             <path d="M14.5 9a3.5 4 0 1 0 0 6" />
         </svg>
         <p>Todos los derechos reservados.</p>
-
     </footer>
+    <div class="consumidores">
+        <a target="_blank" href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario">
+            <p>Defensa de las y los Consumidores: Para reclamos Ingrese aquí</p>
+        </a>
+    </div>
 
 </body>
 
